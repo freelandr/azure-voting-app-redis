@@ -5,6 +5,11 @@ pipeline {
       steps {
         bat(script: """
           echo ${GIT_BRANCH}
+          echo ${GIT_URL}
+          echo ${BUILD_NUMBER}
+          echo ${NODE_NAME}
+          echo ${JOB_NAME}
+          echo ${WORKSPACE}
         """) 
       }
     }
